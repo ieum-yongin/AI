@@ -1,0 +1,66 @@
+{
+  "input": {
+    "network_id": 1,
+    "routes_off": [
+      228000281
+    ]
+  },
+  "output": {
+    "summary": {
+      "routes_off": [
+        228000281
+      ],
+      "affected_stop_count": 90,
+      "changed_stop_count": 22,
+      "danger_delta": 21,
+      "caution_delta": -20,
+      "isolated_stop_count": 15,
+      "affected_riders": 1651
+    },
+    "stops": [
+      {
+        "stop_id": 228002216,
+        "before_risk_level": "CAUTION",
+        "after_risk_level": "DANGER",
+        "is_changed": true,
+        "before_route_count": 2,
+        "remaining_route_count": 1,
+        "after_min_alternatives": 0,
+        "estimated_affected_daily": 135.2,
+        "is_isolated": false,
+        "reason": "노선 1개 중단으로 1개만 남음 · 하루 승차 약 270명"
+      },
+      {
+        "stop_id": 228003293,
+        "before_risk_level": "CAUTION",
+        "after_risk_level": "DANGER",
+        "is_changed": true,
+        "before_route_count": 2,
+        "remaining_route_count": 1,
+        "after_min_alternatives": 0,
+        "estimated_affected_daily": 104.2,
+        "is_isolated": false,
+        "reason": "노선 1개 중단으로 1개만 남음 · 하루 승차 약 208명"
+      },
+      {
+        "stop_id": 228003295,
+        "before_risk_level": "CAUTION",
+        "after_risk_level": "DANGER",
+        "is_changed": true,
+        "before_route_count": 2,
+        "remaining_route_count": 1,
+        "after_min_alternatives": 0,
+        "estimated_affected_daily": 90.2,
+        "is_isolated": false,
+        "reason": "노선 1개 중단으로 1개만 남음 · 하루 승차 약 180명"
+      }
+    ],
+    "unknown_route_ids": [],
+    "is_provisional": true,
+    "criteria": {
+      "busy_daily_boarding": 100.0,
+      "few_routes": 2,
+      "high_passengers_per_route": 300.0
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "run_key": "a8b51bfa-ce96-4782-867c-cb551481fbf9",
+  "algorithm_version": "rgcn_v1",
+  "data_start": "2026-06-01",
+  "data_end": "2026-08-31",
+  "status": "PENDING  (백엔드가 모든 행을 넣은 뒤 COMPLETED로 변경)",
+  "created_at": "2026-11-11T07:38:26+00:00",
+  "config": {
+    "model_file": "rgcn_v1_holdout.pt",
+    "model_train_end": "2026-03-02",
+    "threshold": {
+      "target_false_alarm": 0.05,
+      "window_days": 85,
+      "abs_log_ratio": 0.33,
+      "decrease_below_ratio": 0.719,
+      "increase_above_ratio": 1.391,
+      "min_mean_daily_usage": 30,
+      "calibrated_on": "2026-06-02~2026-08-25",
+      "per_seed": [
+        0.3202590286851178,
+        0.3312147209588774,
+        0.3385804429082631
+      ]
+    },
+    "min_consecutive_days": 3,
+    "merge_gap_days": 2,
+    "lag_correction_days": 3,
+    "stats_days": 91,
+    "usage_definition": "boarding+alighting"
+  },
+  "counts": {
+    "stop_diagnosis": 2781,
+    "usage_alert": 62,
+    "alert_daily_detail": 1226
+  }
+}

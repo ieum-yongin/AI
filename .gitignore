@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.DS_Store
+# 실험 중간 산출물 (용량 큼, 스크립트로 다시 만들 수 있음)
+results/models/
+results/preds/
+results/*.npy
+*.log

@@ -1,0 +1,7 @@
+,recall,recall,recall_drop,recall_drop,recall_rise,recall_rise,false_alarm,false_alarm,delay_days,delay_days
+,mean,std,mean,std,mean,std,mean,std,mean,std
+kind,,,,,,,,,,
+gcn,0.952,0.014,1.0,0.0,0.904,0.027,0.055,0.004,3.401,0.061
+gru,0.953,0.015,1.0,0.0,0.907,0.029,0.053,0.004,3.332,0.053
+rgcn,0.948,0.01,0.997,0.006,0.899,0.022,0.055,0.003,3.322,0.059
+seasonal,0.962,0.017,1.0,0.0,0.924,0.034,0.055,0.004,3.391,0.063

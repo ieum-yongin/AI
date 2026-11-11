@@ -1,0 +1,14 @@
+{
+  "target_false_alarm": 0.05,
+  "window_days": 85,
+  "abs_log_ratio": 0.33,
+  "decrease_below_ratio": 0.719,
+  "increase_above_ratio": 1.391,
+  "min_mean_daily_usage": 30,
+  "calibrated_on": "2026-06-02~2026-08-25",
+  "per_seed": [
+    0.3202590286851178,
+    0.3312147209588774,
+    0.3385804429082631
+  ]
+}
