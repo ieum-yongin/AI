@@ -75,6 +75,13 @@ net = build_network(
 result = simulate(net, routes_off=[route_id, ...])
 ```
 
+**ID 규칙**: simulate()는 넣어준 ID를 그대로 쓰고 그대로 돌려줘요. 그래서 **DB 내부 ID(bus_route.route_id, bus_stop.stop_id, 정수)**로 통일해 주세요.
+
+- build_network()의 (route_id, stop_id)와 승차 데이터의 stop_id를 모두 DB 내부 ID로 넣어 주세요.
+- API의 routes_off도 bus_route.route_id로 받아 주세요.
+- 그러면 결과의 stop_id가 bus_stop.stop_id로 나와서 simulation_stop_result에 바로 저장할 수 있어요.
+- 아래 예시 JSON에 228000281 같은 값이 보이는 건 DB 없이 공공데이터 원본 ID로 돌렸기 때문이에요.
+
 **결과**
 
 - `result["summary"]` → simulations/{id}/ 의 요약
